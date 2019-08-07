@@ -2,4 +2,4 @@
 
 The main idea is to generate new and realistic fetures based on labels. GANs are excellent at generating realistic data. We can condition this generation by using [Conditional Generative Adversarial Networks](https://arxiv.org/abs/1411.1784)
 
-Refer to [Jupyter notebook](notebook) to see how this can be done.
+Refer to [Jupyter notebook](notebook) to see the different architectures for Discriminator and Generator model, as well as how they're chained together in an assembly-line sort of way where the input of the GAN is the Generator's input. The Generator's output becomes the input of the Discriminator, which outputs the validity of the features (output of the GAN).
